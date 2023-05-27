@@ -1,0 +1,31 @@
+﻿@model DatabaseModel
+
+<h2>Database Product Details</h2>
+
+<div>
+    <label>@Html.LabelFor(model => model.Name)</label>
+    <div>@Html.DisplayFor(model => model.Name)</div>
+</div>
+
+<div>
+    <label>@Html.LabelFor(model => model.CreatedDate)</label>
+    <div>@Html.DisplayFor(model => model.CreatedDate)</div>
+</div>
+
+<div>
+    <label>@Html.LabelFor(model => model.Author)</label>
+    <div>@Html.DisplayFor(model => model.Author)</div>
+</div>
+
+<div>
+    <label>@Html.LabelFor(model => model.RecordCount)</label>
+    <div>@Html.DisplayFor(model => model.RecordCount)</div>
+</div>
+
+<div>
+    <label>@Html.LabelFor(model => model.Rating)</label>
+    <div>@Html.DisplayFor(model => model.Rating)</div>
+</div>
+
+<br />
+@Html.ActionLink("Edit", "Edit", new { id = Model.Id })
